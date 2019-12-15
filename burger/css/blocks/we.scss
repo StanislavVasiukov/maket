@@ -1,0 +1,38 @@
+.we {
+  background-image: url("../img/bg/second.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.we_title {
+  text-align: center;
+}
+
+.we__list {
+  margin-top: 55px;
+  height: 100%;
+  display: flex;
+}
+
+.we__point {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.we__tag {
+  @include lifehack();
+  font-size: 25px;
+  text-align: center;
+  margin-top: 34px;
+}
+
+.we__description {
+  @include ubuntu($style: light);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 28px;
+}

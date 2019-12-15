@@ -1,0 +1,53 @@
+.reviews__list {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__item {
+  flex-basis: 25%;
+  height: 50%;
+  position: relative;
+  filter: grayscale(100%);
+
+  &:hover {
+    .reviews__hover {
+      opacity: 1;
+    }
+  }
+}
+
+.reviews__photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.reviews__hover {
+  opacity: 0;
+  color: $white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($black, 0.3);
+  padding: 50px 19px;
+  transition: opacity .4s;
+}
+
+.reviews__name {
+  @include gagalin();
+}
+
+.reviews__text {
+  margin-top: 30px;
+  @include ubuntu($style: light);
+  bottom: 15px;
+}
+
+.btn__reviews {
+  margin-top: 15px;
+  @include ubuntu($style: medium);
+}
